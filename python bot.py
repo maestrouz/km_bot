@@ -37,7 +37,7 @@ async def start_cmd(message: Message):
         users[user_id] = {"referrals": 0}
         save_data(users)
     
-    referral_link = f"https://t.me/YOUR_BOT_USERNAME?start={user_id}"  # YOUR_BOT_USERNAME ni bot username bilan almashtiring
+    referral_link = f"https://t.me/@kimyo_markazi_bot?start={user_id}"  # YOUR_BOT_USERNAME ni bot username bilan almashtiring
     
     text = (
         f"Salom, {message.from_user.first_name}! 👋\n\n"
@@ -45,7 +45,7 @@ async def start_cmd(message: Message):
         f"📩 Sizning referal havolangiz:\n{referral_link}\n\n"
         f"✅ Har bir yangi foydalanuvchi uchun 1 ball olasiz.\n"
         f"🎯 5 ball to‘plaganingizda, asosiy guruh havolasini olasiz!\n\n"
-        f"🔗 Birinchi guruhga qo'shiling: {FIRST_GROUP_LINK}"
+        f"🔗 Birinchi guruhga qo'shiling: {https://t.me/Kimyo_markaz1}"
     )
     
     await message.answer(text)
